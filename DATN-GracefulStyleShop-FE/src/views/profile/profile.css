@@ -1,0 +1,56 @@
+.u-profile-user{
+    display: flex;
+    padding: 16px 0;
+}
+.profile-left{
+    flex-basis: 15%;
+    user-select: none;
+}
+.profile-right{
+    flex-basis: 85%;
+    /* background-color: white; */
+    border-radius: 2px;
+}
+.profile-left .title{
+    display: flex;
+    align-items: center;
+}
+.title-profile{
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+.profile-left .title img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.profile-list-tab{
+    display: block;
+    margin-top: 24px;
+}
+.profile-list-tab-2{
+    padding-left: 24px;
+}
+.profile-tab-item-1,.profile-tab-item-2{
+    cursor: pointer;
+}
+.profile-tab-item-2:hover{
+    color: var(--color-btn-primary);
+}
+.profile-list-tab-2 > .profile-tab-item-2{
+    padding: 4px 0;
+}
+.profile-tab-item-1 .fa-solid{
+    margin-right: 8px;
+    color: var(--input-primary);
+}
+.profile-tab-item-1 .fa-regular{
+    margin-right: 6px;
+    color: var(--input-primary);
+}
+.profile-list-tab-2{
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}

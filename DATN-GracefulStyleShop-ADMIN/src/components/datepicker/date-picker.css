@@ -1,0 +1,87 @@
+.date-picker__wrapper {
+  min-width: 100%;
+  height: var(--height-default) !important;
+  box-sizing: border-box;
+  margin-top: 5px;
+  position: relative;
+}
+.dp__input_wrap > svg{
+  display: none;
+}
+.dp__overlay{
+  overflow: scroll;
+}
+.dp__lable {
+  font-weight: 600;
+}
+.dp__lable span {
+  color: red;
+}
+.dp__calendar_header_separator {
+  background-color: unset;
+}
+.dp__calendar_header_item {
+  color: #666666;
+}
+.dp__now_wrap {
+  border-top: 1px solid #bbb;
+}
+
+.dp__now_button {
+  border: unset;
+  font-size: 13px;
+  color: var(--btn-primary);
+  padding: 12px;
+}
+.dp__active_date {
+  background-color: var(--btn-primary);
+  border-radius: 50%;
+}
+.dp__active_date-now {
+  margin: 17px 0;
+  font-size: 14px;
+  color: #50b83c;
+  cursor: pointer;
+  font-weight: 500;
+}
+.dp__input {
+  height: 100%;
+  width: 100%;
+  line-height: unset;
+  padding: unset;
+  border: 1px solid #bbb;
+  font-size: 13px;
+  padding: 16px;
+  font-family: inherit;
+}
+input::placeholder {
+  font-size: 11px;
+}
+.dp__input_icon {
+  left: unset;
+  right: 0;
+}
+.dp__clear_icon {
+  display: none;
+}
+
+.date-picker__input:not(:placeholder-shown) ~ .date-picker__icon {
+	display: none;
+}
+
+.date-picker__icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 8px;
+
+	padding: 2px 4px;
+	margin-top: 2px;
+}
+
+.date-picker__icon i {
+	display: inline-block;
+	background: url('../../assets/img/Sprites.64af8f61.svg') no-repeat -128px -312px;
+	width: 16px;
+	height: 16px;
+}

@@ -1,0 +1,28 @@
+.page__number{
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.pagination {
+    display: flex;
+    padding: 4px;
+    margin: 0 3px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.pagination  li{
+    margin: 5px;
+    padding: 2px 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+}
+.pagination  li.active{
+    border-radius: 2px ;
+    border: 1px solid #bbb;
+}
+.page-item.disabled{
+    cursor: default!important;
+    color: #9e9e9e;
+}

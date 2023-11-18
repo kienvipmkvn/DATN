@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  front-admin:
+    build: ./DATN-GracefulStyleShop-ADMIN
+    ports:
+      - 3000:80
+  be:
+    build: ./DATN-GracefulStyleShop-BE
+    ports:
+      - 7218:80

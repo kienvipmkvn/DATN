@@ -1,0 +1,37 @@
+:root {
+  --color-header: #fff;
+  --color-footer: red;
+  --color-content: #fff;
+  --color-footer: #ed6464;
+  --color-text-grey: #4a4a4a;
+  --font-size-default: 14px;
+  --padding-beside: 100px;
+  --height-header: 70px;
+  --background-color-body: #d4d3d35b;
+  --background-color-header: #fff;
+  --color-btn-primary: #ff0000;
+  --bgr-menu: rgb(233, 233, 233);
+  --input-primary: #2ca01c;
+  --input-hover: #46ac39;
+  --input-active: #3a9c2d;
+  --width-column: 84px;
+  --btn-primary: #2ca01c;
+  --btn-hover: #46ac39;
+  --btn-active: #3a9c2d;
+  --width-column: 84px;
+
+  --input-focus: #019160;
+  --input-focus-err: #ff4747;
+  --border-table: #bbb;
+  --bgr-menu: rgb(38, 38, 38);
+
+  --bgr-pop-up: rgba(87, 86, 86, 0.433);
+  --border-input-default: #bbb;
+
+  --width-row: 36px;
+  --height-default: 34px;
+
+  --height-menu: 50px;
+  --with-menu: 200px;
+  --with-menu-collapse: 56px;
+}

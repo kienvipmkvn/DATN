@@ -1,0 +1,74 @@
+.m-account{
+    position: absolute;
+    top: 130%;
+    left: -240px;
+    z-index: 999999;
+    background-color: var(--color-content);
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+/* .login-panel{
+    position: relative;
+}
+*/
+/* .site_account_panel_list::before{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid white;
+    top: -10%;
+    left: 67%;
+} */
+.site_account_panel_list{
+    display: flex;
+    width: calc(340px + 8px);
+    overflow: hidden;
+}
+.login-panel{
+    width: 340px;
+    display: none;
+}
+.recover-panel{
+    width: 340px;
+}
+.site_account_header{
+    position: relative;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #e7e7e7;
+    text-align: center;
+}
+.txt-title {
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    margin: 0;
+}
+.txt-small{
+    font-size: 14px;
+    margin: 0px 0 0;
+}
+.remember-password{
+    margin: 8px 0;
+}
+.remember-password > span{
+    font-size: 13px;
+    margin-left: 8px;
+}
+.site_account_secondary-action{
+    font-size: 12px;
+    color: #677279;
+}
+.site_account_secondary-action div{
+    margin: 4px 0;
+}
+.site_account_secondary-action span{
+    color: #000000;
+    transition: color 0.2s ease-in-out;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+}

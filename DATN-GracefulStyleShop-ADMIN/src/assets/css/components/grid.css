@@ -1,0 +1,262 @@
+.m-main-content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .m-main-content-title {
+    font-family: GoogleSans-Bold;
+    font-size: 26px;
+  }
+  .m-main-content-btn-add{
+    display: flex;
+    align-items: center;
+  }
+  .m-main-content-btn-import{
+    background-color: var(--btn-primary);
+    height: var(--height-default);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    border-radius:0 4px 4px 0;
+    margin-left: -2px;
+    border-left: 1px solid white;
+    cursor: pointer;
+    position: relative;
+  }
+  .m-main-content-btn-import:hover{
+    background-color: var(--btn-hover);
+  }
+  .m-main-content-btn-import:active{
+    background-color: var(--btn-active);
+  }
+  .m-main-content-btn-import__action,.content-table__btn-delete {
+    position: absolute;
+    width: max-content;
+    top: 102%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #bbb;
+  
+  }
+  .m-main-content-btn-import__action li,.content-table__btn-delete li{
+    padding: 4px 8px;
+    margin: 1px;
+    border-radius: 2px;
+    user-select: none;
+  }
+  .m-main-content-btn-import__action li:hover,.content-table__btn-delete li:hover{
+    background-color: #e4e4e4;
+    color: var(--btn-primary);
+  }
+  .content-table__btn-delete{
+    margin-top: 2px;
+    border-radius: 2px;
+  }
+  .content-table__btn-delete li{
+    padding: 4px 24px ;
+    border-radius: 4px;
+  }
+  /*  body */
+  .m-main-content-table {
+    width: 100%;
+    height: calc(100vh - 140px);
+    background-color: white;
+    border-radius: 4px;
+    padding: 0 16px;
+    margin-top: 16px;
+  }
+  .content-table__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+  }
+  .content-table__btn-left {
+    display: flex;
+  }
+  .content-table-btn__left-block{
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+  .content-table__btn-right {
+    display: flex;
+    align-items: center;
+  }
+  .content-table__refesh {
+    cursor: pointer;
+    margin-left: 16px;
+  }
+  
+  /*  navigate */
+  .content-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  .page__select-number {
+    margin-right: 25px;
+    position: relative;
+  }
+  .page__select-number .selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    user-select: none;
+  }
+  .page__setting-number {
+    margin-right: 7px;
+  }
+  .navigation__page-setting {
+    margin-right: 16px;
+  }
+  .list-select {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    bottom: 32px;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+  }
+  .list-select .list-select-item {
+    padding: 6px 12px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .list-select .list-select-item:nth-child(1) {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .list-select .list-select-item:nth-last-child(1) {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .list-select .list-select-item:hover {
+    background-color: var(--btn-hover);
+  }
+  .list-select-item.active {
+    background-color: var(--btn-active);
+  }
+  .content-navigation__page {
+    display: flex;
+    align-items: center;
+    min-width: max-content;
+  }
+  .content-navigation__total {
+    min-width: max-content;
+  }
+  .content-navigation__page  .m-input-main-cbb{
+    margin-top: unset !important;
+  }
+  .content-navigation__total span {
+    font-weight: bold;
+  }
+  .page__number {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+  
+  .pagination {
+    display: flex;
+    padding: 4px;
+    margin: 0 3px;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  .pagination li {
+    margin: 5px;
+    padding: 2px 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+  }
+  .pagination li.active {
+    border-radius: 2px;
+    border: 1px solid #bbb;
+  }
+  .page-item.disabled {
+    cursor: default !important;
+    color: #9e9e9e;
+  }
+  
+  /* Thực hiện hàng loat */
+  .content-table-btn__left-title {
+    display: flex;
+    align-items: center;
+    transition: 0.5s ;
+  }
+  .series-selected span{
+    font-weight: bold;
+  }
+  .series-unchecked{
+    margin-left: 16px;
+    color: rgb(251, 146, 19);
+    cursor: pointer;
+    padding: 8px 16px;
+    border: 1px solid rgb(244, 183, 110);
+    border-radius: 4px;
+    position: relative;
+    font-weight: 600;
+    height: var(--height-default);
+    align-items: center;
+    transition: 0.3s;
+    box-sizing: border-box !important;
+  }
+  .series-unchecked:hover{
+    color: rgb(251, 146, 19);
+    border: 1px solid rgba(246, 193, 128, 0.91);
+    background-color: rgba(251, 218, 178, 0.229);
+  }
+  .series-unchecked:active{
+    color: rgb(251, 146, 19);
+    border: 1px solid rgb(255, 140, 0);
+    background-color: rgb(255, 140, 0);
+  }
+  .action__delete-mutiple{
+    margin-left: 16px;
+    padding: 8px 16px;
+    height: var(--height-default);
+    color: rgb(253, 35, 35);
+    border: 1px solid rgba(253, 35, 35, 0.305);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: rgba(246, 62, 62, 0.059);
+    transition: 0.3s;
+    user-select: none;
+    box-sizing: border-box !important;
+    min-width: 80px;
+    text-align: center;
+  }
+  .action__delete-mutiple:hover{
+    color: red;
+    border: 1px solid rgba(255, 0, 0, 0.508);
+    background-color: rgba(246, 62, 62, 0.167);
+  }
+  .action__delete-mutiple:active{
+    color: red;
+    border: 1px solid rgba(255, 0, 0, 0.693);
+    background-color: rgba(246, 62, 62, 0.381);
+  }
+  /* .content-table__btn-delete{
+      position: absolute;
+      top: calc(100% + 2px);
+      right: 0;
+      font-weight: 300;
+      padding: 4px 24px 4px 8px;
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      background-color: #fff;
+      cursor: pointer;
+  }
+  .content-table__btn-delete:hover{
+      background-color: #d1d1d1;
+  
+  } */
