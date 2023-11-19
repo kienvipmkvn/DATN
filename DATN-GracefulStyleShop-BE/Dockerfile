@@ -1,8 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine as build
 WORKDIR /app
 
-EXPOSE 7218
-
 COPY . .
 RUN dotnet restore
 RUN dotnet publish -o /app/published-app
@@ -10,4 +8,5 @@ RUN dotnet publish -o /app/published-app
 FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine as runtime
 WORKDIR /app
 COPY --from=build /app/published-app /app
+EXPOSE 7218
 ENTRYPOINT [ "dotnet", "/app/DATN.DTKIEN.GracefulStyleShop.API.dll" ]
