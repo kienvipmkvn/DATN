@@ -6,16 +6,4 @@ services:
     mem_limit: 512m
     hostname: front-admin
     ports:
-      - 3000:80
-  be:
-    image: kienvipmkvn/be
-    mem_limit: 512m
-    hostname: be
-    environment:
-      - MYSQL_SERVER='host.docker.internal'
-      - MYSQL_PORT='3306'
-      - MYSQL_INITIAL_CATALOG='datn'
-      - MYSQL_USERNAME='root'
-      - MYSQL_PASSWORD='123456'
-    ports:
-      - 7218:7218
+      - 80:80

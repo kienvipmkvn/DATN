@@ -10,5 +10,7 @@ RUN npm run build
 
 # production stage
 FROM nginx:stable as production-stage
+RUN mkdir /app
 EXPOSE 80
-COPY --from=build-stage /app/dist /usr/share/nginx/html
+COPY --from=build-stage /app/dist /app
+COPY nginx.conf /etc/nginx/nginx.conf
