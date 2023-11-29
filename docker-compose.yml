@@ -18,4 +18,4 @@ services:
       - MYSQL_USERNAME='root'
       - MYSQL_PASSWORD='123456'
     ports:
-      - 7218:80
+      - 7218:7218
