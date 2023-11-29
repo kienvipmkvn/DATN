@@ -5,8 +5,6 @@ services:
     image: kienvipmkvn/front-admin
     mem_limit: 512m
     hostname: front-admin
-    ports:
-      - 80:80
   be:
     image: kienvipmkvn/be
     mem_limit: 512m
@@ -17,5 +15,9 @@ services:
       - MYSQL_INITIAL_CATALOG='datn'
       - MYSQL_USERNAME='root'
       - MYSQL_PASSWORD='123456'
+  nginx:
+    image: 'kienvipmkvn/multi-nginx'
+    mem_limit: 512m
+    hostname: nginx
     ports:
-      - 7218:7218
+      - '80:80'
