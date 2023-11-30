@@ -5,10 +5,10 @@ services:
     image: kienvipmkvn/front-admin
     mem_limit: 512m
     hostname: front-admin
-  be:
+  be-api:
     image: kienvipmkvn/be
     mem_limit: 512m
-    hostname: be
+    hostname: be-api
     environment:
       - MYSQL_SERVER='host.docker.internal'
       - MYSQL_PORT='3306'
@@ -21,3 +21,6 @@ services:
     hostname: nginx
     ports:
       - '80:80'
+    depends_on:
+      - be-api
+      - front-admin
