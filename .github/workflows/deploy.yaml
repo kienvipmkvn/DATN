@@ -1,8 +1,7 @@
 name: Deploy DATN
 on:
-  push:
-    branches:
-      - master
+  pull_request_review:
+    types: [submitted]
 
 jobs:
   build:
