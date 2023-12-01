@@ -9,12 +9,6 @@ services:
     image: kienvipmkvn/be
     mem_limit: 512m
     hostname: be-api
-    environment:
-      - MYSQL_SERVER='host.docker.internal'
-      - MYSQL_PORT='3306'
-      - MYSQL_INITIAL_CATALOG='datn'
-      - MYSQL_USERNAME='root'
-      - MYSQL_PASSWORD='123456'
   nginx:
     image: 'kienvipmkvn/multi-nginx'
     mem_limit: 512m
