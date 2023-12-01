@@ -12,11 +12,11 @@ jobs:
 
       - run: docker build -t kienvipmkvn/front-admin ./DATN-GracefulStyleShop-ADMIN --build-arg VUE_APP_BASE_API_URL=http://dtkien.ap-southeast-1.elasticbeanstalk.com/api/v1
       - run: docker build -t kienvipmkvn/be ./DATN-GracefulStyleShop-BE 
-      \ --build-arg MYSQL_SERVER=${{ secrets.MYSQL_SERVER }}
-      \ --build-arg MYSQL_PORT=${{ secrets.MYSQL_PORT }}
-      \ --build-arg MYSQL_INITIAL_CATALOG=${{ secrets.MYSQL_INITIAL_CATALOG }}
-      \ --build-arg MYSQL_USERNAME=${{ secrets.MYSQL_USERNAME }}
-      \ --build-arg MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }}
+       --build-arg MYSQL_SERVER=${{ secrets.MYSQL_SERVER }}
+       --build-arg MYSQL_PORT=${{ secrets.MYSQL_PORT }}
+       --build-arg MYSQL_INITIAL_CATALOG=${{ secrets.MYSQL_INITIAL_CATALOG }}
+       --build-arg MYSQL_USERNAME=${{ secrets.MYSQL_USERNAME }}
+       --build-arg MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }}
       - run: docker build -t kienvipmkvn/multi-nginx ./nginx
 
       - run: docker push kienvipmkvn/front-admin
