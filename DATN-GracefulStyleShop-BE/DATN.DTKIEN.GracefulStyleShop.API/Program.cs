@@ -75,6 +75,7 @@ var initialCatalog = Environment.GetEnvironmentVariable("MYSQL_INITIAL_CATALOG")
 var userName = Environment.GetEnvironmentVariable("MYSQL_USERNAME");
 var password = Environment.GetEnvironmentVariable("MYSQL_PASSWORD");
 var connectionString = $"Server={dataSource};Port={port};Database={initialCatalog};Uid={userName};Pwd={password}";
+Console.WriteLine(connectionString);
 DatabaseContext.connectionString = connectionString;
 
 var app = builder.Build();
