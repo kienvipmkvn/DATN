@@ -10,7 +10,7 @@ services:
     mem_limit: 512m
     hostname: be-api
     environment:
-      - MYSQL_SERVER=13.229.110.167
+      - MYSQL_SERVER=host.docker.internal
       - MYSQL_PORT=3306
       - MYSQL_INITIAL_CATALOG=datn
       - MYSQL_USERNAME=root
