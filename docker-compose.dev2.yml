@@ -1,0 +1,20 @@
+version: '3'
+services:
+
+  front-admin:
+    build: 
+      context: ./DATN-GracefulStyleShop-ADMIN
+      args:
+        VUE_APP_BASE_API_URL: http://localhost:7218/api/v1
+    ports:
+      - 80:80
+  be:
+    build: ./DATN-GracefulStyleShop-BE
+    ports:
+      - 7218:80
+    environment:
+      - MYSQL_SERVER='host.docker.internal'
+      - MYSQL_PORT='3306'
+      - MYSQL_INITIAL_CATALOG='datn'
+      - MYSQL_USERNAME='root'
+      - MYSQL_PASSWORD='123456'

@@ -2,19 +2,25 @@ version: '3'
 services:
 
   front-admin:
-    build: 
-      context: ./DATN-GracefulStyleShop-ADMIN
-      args:
-        VUE_APP_BASE_API_URL: http://localhost:7218/api/v1
-    ports:
-      - 80:80
-  be:
-    build: ./DATN-GracefulStyleShop-BE
-    ports:
-      - 7218:80
+    image: kienvipmkvn/front-admin
+    mem_limit: 512m
+    hostname: front-admin
+  be-api:
+    image: kienvipmkvn/be
+    mem_limit: 512m
+    hostname: be-api
     environment:
-      - MYSQL_SERVER='host.docker.internal'
-      - MYSQL_PORT='3306'
-      - MYSQL_INITIAL_CATALOG='datn'
-      - MYSQL_USERNAME='root'
-      - MYSQL_PASSWORD='123456'
+      - MYSQL_SERVER=14.225.255.150
+      - MYSQL_PORT=3306
+      - MYSQL_INITIAL_CATALOG=datn
+      - MYSQL_USERNAME=root
+      - MYSQL_PASSWORD=123456
+  nginx:
+    image: 'kienvipmkvn/multi-nginx'
+    mem_limit: 512m
+    hostname: nginx
+    ports:
+      - '80:80'
+    depends_on:
+      - be-api
+      - front-admin
