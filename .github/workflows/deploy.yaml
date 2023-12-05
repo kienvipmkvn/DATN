@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
-      - run: docker build -t kienvipmkvn/front-admin ./DATN-GracefulStyleShop-ADMIN --build-arg VUE_APP_BASE_API_URL=http://dtkien.ap-southeast-1.elasticbeanstalk.com/api/v1
+      - run: docker build -t kienvipmkvn/front-admin ./DATN-GracefulStyleShop-ADMIN --build-arg VUE_APP_BASE_API_URL=datn-dtkien.ap-southeast-1.elasticbeanstalk.com/api/v1
       - run: docker build -t kienvipmkvn/be ./DATN-GracefulStyleShop-BE
       - run: docker build -t kienvipmkvn/multi-nginx ./nginx
 
@@ -26,8 +26,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
-          application_name: DTKIEN-DATN
-          environment_name: DTKIEN-DATN-env
+          application_name: DATN2023
+          environment_name: DATN2023-env
           existing_bucket_name: elasticbeanstalk-ap-southeast-1-028273443908
           region: ap-southeast-1
           version_label: ${{ github.sha }}
