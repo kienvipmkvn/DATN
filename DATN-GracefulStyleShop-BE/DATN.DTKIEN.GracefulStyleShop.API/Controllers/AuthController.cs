@@ -42,7 +42,7 @@ namespace DATN.DTKIEN.GracefulStyleShop.API.Controllers
             }
             catch (MExceptionResponse ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex);
                 // Bắn lỗi exeption
                 return ExceptionErrorResponse(ex, HttpContext.TraceIdentifier);
             }

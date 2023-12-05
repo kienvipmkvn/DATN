@@ -52,7 +52,7 @@ namespace DATN.DTKIEN.GracefulStyleShop.Commons
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex);
                 return ex.Message;
             }
 
@@ -78,7 +78,7 @@ namespace DATN.DTKIEN.GracefulStyleShop.Commons
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex);
                 return ex.Message;
             }
             return "";
@@ -150,7 +150,7 @@ namespace DATN.DTKIEN.GracefulStyleShop.Commons
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex);
             }
 
             return dt;

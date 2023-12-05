@@ -43,7 +43,7 @@ namespace DATN.DTKIEN.GracefulStyleShop.DL.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex);
                 _databaseConnection.Close();
                 throw new MExceptionResponse(ex.Message);
             }
@@ -70,7 +70,7 @@ namespace DATN.DTKIEN.GracefulStyleShop.DL.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex);
                 _databaseConnection.RollbackTransaction();
                 _databaseConnection.Close();
                 throw new MExceptionResponse(ex.Message);
@@ -126,7 +126,7 @@ namespace DATN.DTKIEN.GracefulStyleShop.DL.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex);
                 _databaseConnection.Close();
                 throw new MExceptionResponse(ex.Message);
             }

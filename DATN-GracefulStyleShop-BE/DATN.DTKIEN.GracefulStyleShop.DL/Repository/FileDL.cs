@@ -49,7 +49,7 @@ namespace DATN.DTKIEN.GracefulStyleShop.DL.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex);
                 _databaseConnection.RollbackTransaction();
                 // Đóng kết nối
                 _databaseConnection.Close();
@@ -77,7 +77,7 @@ namespace DATN.DTKIEN.GracefulStyleShop.DL.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex);
                 // Đóng kết nối
                 _databaseConnection.Close();
                 throw new MExceptionResponse(ex.Message);
