@@ -13,7 +13,7 @@ services:
       - MYSQL_SERVER=14.225.255.150
       - MYSQL_PORT=3306
       - MYSQL_INITIAL_CATALOG=datn
-      - MYSQL_USERNAME=root
+      - MYSQL_USERNAME=dtkien
       - MYSQL_PASSWORD=123456
   nginx:
     image: 'kienvipmkvn/multi-nginx'
