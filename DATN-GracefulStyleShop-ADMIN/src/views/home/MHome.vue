@@ -11,7 +11,7 @@
         </div>
         <div class="card-footer bg-c-green">
           <div class="align-items-center">
-            <i class="fa-solid fa-dollar-sign"></i> Doanh thu fff
+            <i class="fa-solid fa-dollar-sign"></i> Doanh thu
           </div>
         </div>
       </div>
