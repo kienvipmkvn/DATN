@@ -5,6 +5,10 @@ services:
     image: kienvipmkvn/front-admin
     mem_limit: 512m
     hostname: front-admin
+  front-client:
+    image: kienvipmkvn/front-client
+    mem_limit: 512m
+    hostname: front-client
   be-api:
     image: kienvipmkvn/be
     mem_limit: 512m
@@ -24,3 +28,4 @@ services:
     depends_on:
       - be-api
       - front-admin
+      - front-client
