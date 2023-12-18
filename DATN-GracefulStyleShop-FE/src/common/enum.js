@@ -64,9 +64,9 @@ const enumD = {
      * Chức năng button form
      */
     enumActionButtonForm : {
-      // Cất
+      // Lưu
       save: 0,
-      // Thêm và cất
+      // Thêm và lưu
       addAndSave : 1,
     },
      /**

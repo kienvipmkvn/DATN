@@ -73,14 +73,14 @@
             typeBtn="close"
             :tabIndex="18"
             @click="onSubmitFormItem(actionButtonForm.save)"
-            dataTip="Cất (Ctrl + S)"
-            >Cất</MButton
+            dataTip="Lưu (Ctrl + S)"
+            >Lưu</MButton
           >
           <MButton
             :tabIndex="19"
             @click="onSubmitFormItem(actionButtonForm.addAndSave)"
-            dataTip="Cất và thêm (Ctrl + Shift + S)"
-            >Thêm và cất</MButton
+            dataTip="Lưu và thêm (Ctrl + Shift + S)"
+            >Thêm và lưu</MButton
           >
         </div>
       </div>
