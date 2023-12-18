@@ -36,18 +36,7 @@
             @click="signin"
             >Đăng nhập</m-button
           >
-          <m-button
-            backgroundColor="rgb(221, 75, 57)"
-            width="100%"
-            margin="8px 0"
-            >Đăng nhập Google</m-button
-          >
-          <m-button
-            backgroundColor="rgb(59, 89, 152)"
-            width="100%"
-            margin="8px 0"
-            >Đăng nhập Facebook</m-button
-          >
+          
           <div class="site_account_secondary-action">
             <div>
               Khách hàng mới?

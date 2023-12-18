@@ -108,13 +108,13 @@
       </v-btn>
       </div>
     <!-- Tin tức start-->
-    <div class="home-news">
+    <!-- <div class="home-news">
       <div class="list-news-title">Tin tức DuongShop</div>
       <div class="list-news">
           <news-item v-for="index in 9" :key="index" />
       </div>
       <div class="list-news-navigation">Xem các tin bài khác »</div>
-    </div>
+    </div> -->
 
     <!-- Tin tức End -->
     <!-- Donors Start -->

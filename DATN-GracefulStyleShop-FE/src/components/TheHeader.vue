@@ -6,7 +6,6 @@
     <div class="menu">
       <li class="menu-item"><a href="/">Trang chủ</a></li>
       <li class="menu-item"><a href="/products">Sản phẩm</a></li>
-      <li class="menu-item">Giảm giá</li>
     </div>
     <div class="action">
       <div class="search" @click="$state.isSearch = true">

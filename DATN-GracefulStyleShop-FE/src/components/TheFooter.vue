@@ -133,15 +133,15 @@
               </p>
               <p>
                 <i class="fas fa-envelope me-3 link-secondary"></i>
-                duongvipro2k1@gmail.com
+                kienvipmkvn3199@gmail.com
               </p>
               <p>
                 <MDBIcon icon="phone" class="me-3 link-secondary" />
-                + 032 866 9614
+                0965427872
               </p>
               <p>
                 <MDBIcon icon="print" class="me-3 link-secondary" />
-                + 032 866 9614
+                0965427872
               </p>
             </MDBCol>
             <!-- Grid column -->
