@@ -10,6 +10,7 @@
         <img
           src="@/assets/img/logo.png"
           alt="logo"
+          style="height: 32px;position: relative;top: 67px;left: 33px;"
         />
       </div>
     </div>
