@@ -109,7 +109,7 @@
       </div>
     <!-- Tin tức start-->
     <div class="home-news" style="display: none;">
-      <div class="list-news-title">Tin tức DuongShop</div>
+      <div class="list-news-title">Tin tức JUNO</div>
       <div class="list-news">
           <news-item v-for="index in 9" :key="index" />
       </div>

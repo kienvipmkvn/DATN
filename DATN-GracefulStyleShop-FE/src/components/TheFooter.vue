@@ -70,12 +70,12 @@
             <MDBCol md="3" lg="4" xl="3" class="mx-auto mb-4">
               <!-- Content -->
               <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3 link-secondary"></i>duongshop
+                <i class="fas fa-gem me-3 link-secondary"></i>juno
               </h6>
               <p>
-                Duongshop là cửa hàng bán lẻ đồ gia dụng, hóa mỹ phẩm, phụ kiện
+                JUNO là cửa hàng bán lẻ đồ gia dụng, hóa mỹ phẩm, phụ kiện
                 chính hãng các thương hiệu Nhật Bản. Hóa phẩm lành tính
-                Duongshop sản xuất tại Nhật Bản. Phụ kiện giày, túi, ví, balo và
+                JUNO sản xuất tại Nhật Bản. Phụ kiện giày, túi, ví, balo và
                 thời trang hiệu TokyoNow, TokyoBasic, TokyoSmart, TokyoSecret,
                 In The Now và nhiều thương hiệu thời trang, phụ kiện khác sản
                 xuất tại Việt Nam, Trung Quốc, Thái Lan…
@@ -91,7 +91,7 @@
                 <a href="#!" class="text-reset"><strong>Hotline CSKH: </strong>024.7300.6999</a>
               </p>
               <p>
-                <a href="#!" class="text-reset"><strong>Email: </strong>cskh@duongshop.vn</a>
+                <a href="#!" class="text-reset"><strong>Email: </strong>cskh@juno.vn</a>
               </p>
             </MDBCol>
             <!-- Grid column -->
