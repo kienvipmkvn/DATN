@@ -4,8 +4,16 @@
       <a href="/"><img src="@/assets/img/logo.png" alt="" /></a>
     </div>
     <div class="menu">
-      <li class="menu-item"><a href="/">Trang chủ</a></li>
-      <li class="menu-item"><a href="/products">Sản phẩm</a></li>
+      <li class="menu-item">
+        <router-link class="link" to="/">
+          Trang chủ
+        </router-link>
+      </li>
+      <li class="menu-item">      
+        <router-link class="link" to="/products">
+          Sản phẩm
+        </router-link>
+      </li>
     </div>
     <div class="action">
       <div class="search" @click="$state.isSearch = true">
@@ -60,7 +68,11 @@
                   </div>
                   <div class="site_account_inner">
                     <ul>
-                      <li><a href="/account/profile">Tài khoản của tôi</a></li>
+                      <li>
+                        <router-link class="link" to="/account/profile">
+                            Tài khoản của tôi
+                          </router-link>
+                      </li>
                       <li @click="goToOrder">
                         <a>Đơn hàng đã đặt</a>
                       </li>

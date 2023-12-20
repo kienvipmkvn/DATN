@@ -349,7 +349,7 @@ export default {
           Amount: this.totalPriceProduct() + this.getPriceShipment(),
           CardCode: e.AccountNumber,
         };
-        let url = `${process.env.VUE_APP_BASE_API_URL}/CreditCard`;
+        let url = `CreditCard`;
         let res = await axiosClient.post(url, data);
         if (res && res.Data) {
           // lấy response dữ liệu thanh thoán

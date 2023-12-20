@@ -38,7 +38,9 @@
                     <div class="site_account_inner">
                       <ul>
                         <li>
-                          <a href="/account/profile">Tài khoản của tôi</a>
+                          <router-link class="link" to="/account/profile">
+                            Tài khoản của tôi
+                          </router-link>
                         </li>
                         <li><a @click="logout">Đăng xuất</a></li>
                       </ul>
