@@ -1,17 +1,16 @@
 version: '3'
 services:
   be-api:
-    build: ./DATN-GracefulStyleShop-BE
+    image: kienvipmkvn/be
+    mem_limit: 512m
     environment:
-      - MYSQL_SERVER=14.225.255.150
+      - MYSQL_SERVER=host.docker.internal
       - MYSQL_PORT=3306
       - MYSQL_INITIAL_CATALOG=datn
-      - MYSQL_USERNAME=dtkien
+      - MYSQL_USERNAME=root
       - MYSQL_PASSWORD=123456
   front-nginx:
-    build:
-      context: .
-      args:
-        VUE_APP_BASE_API_URL: /api/v1
+    image: kienvipmkvn/front-nginx
+    mem_limit: 512m
     ports:
-      - '80:80'
+      - 80:80

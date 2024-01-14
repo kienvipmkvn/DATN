@@ -12,10 +12,6 @@
       </div>
     </div>
     <div class="m__header-right">
-      <div
-        class="m__header-notification icon-notification"
-        data-tip="Tính năng chưa phát triển"
-      ></div>
       <div class="m__header-setting">
         <div class="setting__avt" data-tip="Tính năng chưa phát triển">
           <img src="../../assets/img/default-avatar.jpg" alt="avt" />

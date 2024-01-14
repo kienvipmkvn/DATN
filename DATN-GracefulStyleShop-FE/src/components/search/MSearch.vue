@@ -124,8 +124,10 @@ export default {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 74px;
-  margin-top: 5px;
+  height: auto;
+  margin-top: 14px;
+  right: 16px;
+  position: relative;
 }
 .close-search {
   position: absolute;

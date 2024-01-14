@@ -96,17 +96,6 @@
       </Carousel>
       <div class="m-t-16"></div>
     </div>
-    <div class="view-products">
-        <v-btn
-        color="blue-grey"
-        prepend-icon="mdi-cloud-upload"
-        class="btn-view-products"
-        @click="load(2)"
-      >
-        Xem thêm sản phẩm
-        <b> GIẢM 50% PHỤ KIỆN THỜI TRANG </b>
-      </v-btn>
-      </div>
     <!-- Tin tức start-->
     <div class="home-news" style="display: none;">
       <div class="list-news-title">Tin tức JUNO</div>
@@ -128,7 +117,6 @@ import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide } from "vue3-carousel";
 import config from "@/config";
 import ProductCard from "@/components/ProductCard.vue";
-import { VBtn } from "vuetify/lib/components";
 import NewsItem from '@/components/NewsItem.vue';
 import baseApi from '@/api/baseApi';
 import enumD from '@/common/enum';
@@ -138,7 +126,6 @@ export default {
     Carousel,
     Slide,
     ProductCard,
-    VBtn,
     NewsItem
   },
   created: async function() {

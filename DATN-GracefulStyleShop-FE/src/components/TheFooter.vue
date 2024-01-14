@@ -14,21 +14,21 @@
 
         <!-- Right -->
         <div>
-          <a href="" class="me-4 text-reset">
+          <a href="#" class="me-4 text-reset">
             <MDBIcon
               class="link-secondary"
               iconStyle="fab"
               icon="facebook-f"
             ></MDBIcon>
           </a>
-          <a href="" class="me-4 text-reset">
+          <a href="#" class="me-4 text-reset">
             <MDBIcon
               class="link-secondary"
               iconStyle="fab"
               icon="twitter"
             ></MDBIcon>
           </a>
-          <a href="" class="me-4 text-reset">
+          <a href="#" class="me-4 text-reset">
             <MDBIcon
               class="link-secondary"
               iconStyle="fab"
@@ -42,14 +42,14 @@
               icon="instagram"
             ></MDBIcon>
           </a>
-          <a href="" class="me-4 text-reset">
+          <a href="#" class="me-4 text-reset">
             <MDBIcon
               class="link-secondary"
               iconStyle="fab"
               icon="linkedin"
             ></MDBIcon>
           </a>
-          <a href="" class="me-4 text-reset">
+          <a href="#" class="me-4 text-reset">
             <MDBIcon
               class="link-secondary"
               iconStyle="fab"
@@ -74,11 +74,7 @@
               </h6>
               <p>
                 JUNO là cửa hàng bán lẻ đồ gia dụng, hóa mỹ phẩm, phụ kiện
-                chính hãng các thương hiệu Nhật Bản. Hóa phẩm lành tính
-                JUNO sản xuất tại Nhật Bản. Phụ kiện giày, túi, ví, balo và
-                thời trang hiệu TokyoNow, TokyoBasic, TokyoSmart, TokyoSecret,
-                In The Now và nhiều thương hiệu thời trang, phụ kiện khác sản
-                xuất tại Việt Nam, Trung Quốc, Thái Lan…
+                chính hãng các thương hiệu tại Việt Nam, Trung Quốc, Thái Lan…
               </p>
             </MDBCol>
             <!-- Grid column -->
@@ -102,15 +98,6 @@
               <h6 class="text-uppercase fw-bold mb-4">Hỗ trợ Khách hàng</h6>
               <li class="sp-item">
                 <a href="#!" class="text-reset">Giới thiệu & Liên hệ</a>
-              </li>
-              <li class="sp-item">
-                <a href="#!" class="text-reset">Hướng dẫn mua hàng</a>
-              </li>
-              <li class="sp-item">
-                <a href="#!" class="text-reset">HD thanh toán bằng VNPAY</a>
-              </li>
-              <li class="sp-item">
-                <a href="#!" class="text-reset">Hướng dẫn chọn Size</a>
               </li>
               <li class="sp-item">
                 <a href="#!" class="text-reset">Chính sách bảo mật</a>
@@ -139,10 +126,6 @@
                 <MDBIcon icon="phone" class="me-3 link-secondary" />
                 0965427872
               </p>
-              <p>
-                <MDBIcon icon="print" class="me-3 link-secondary" />
-                0965427872
-              </p>
             </MDBCol>
             <!-- Grid column -->
           </MDBRow>
@@ -156,9 +139,9 @@
         class="text-center p-4"
         style="background-color: rgba(0, 0, 0, 0.05)"
       >
-        © 2021 Copyright:
+        © 2024 Copyright:
         <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
+          >dtkien</a
         >
       </div>
       <!-- Copyright -->

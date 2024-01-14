@@ -69,11 +69,11 @@ builder.Services.AddSingleton(new Cloudinary(new Account(
 )));
 
 // Get connectionString
-var dataSource = Environment.GetEnvironmentVariable("MYSQL_SERVER");
-var port = Environment.GetEnvironmentVariable("MYSQL_PORT");
-var initialCatalog = Environment.GetEnvironmentVariable("MYSQL_INITIAL_CATALOG");
-var userName = Environment.GetEnvironmentVariable("MYSQL_USERNAME");
-var password = Environment.GetEnvironmentVariable("MYSQL_PASSWORD");
+var dataSource = Environment.GetEnvironmentVariable("MYSQL_SERVER") ?? "host.docker.internal";
+var port = Environment.GetEnvironmentVariable("MYSQL_PORT") ?? "3306";
+var initialCatalog = Environment.GetEnvironmentVariable("MYSQL_INITIAL_CATALOG") ?? "datn";
+var userName = Environment.GetEnvironmentVariable("MYSQL_USERNAME") ?? "root";
+var password = Environment.GetEnvironmentVariable("MYSQL_PASSWORD") ?? "123456";
 var connectionString = $"Server={dataSource};Port={port};Database={initialCatalog};Uid={userName};Pwd={password}";
 Console.WriteLine(connectionString);
 DatabaseContext.connectionString = connectionString;

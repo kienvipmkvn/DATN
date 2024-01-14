@@ -28,7 +28,6 @@
     <div class="btn-add-product">
       <v-btn
         color="blue-grey"
-        prepend-icon="mdi-cloud-upload"
         class="btn-view-products"
         @click="load()"
       >

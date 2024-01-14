@@ -1,0 +1,18 @@
+FROM mcr.microsoft.com/dotnet/sdk:6.0-alpine as build
+
+ENV MYSQL_SERVER=host.docker.internal
+ENV MYSQL_PORT=3306
+ENV MYSQL_INITIAL_CATALOG=datn
+ENV MYSQL_USERNAME=root
+ENV MYSQL_PASSWORD=123456
+
+WORKDIR /app
+
+COPY . .
+RUN dotnet restore
+RUN dotnet publish -o /app/published-app
+
+FROM mcr.microsoft.com/dotnet/aspnet:6.0-alpine as runtime
+WORKDIR /app
+COPY --from=build /app/published-app /app
+ENTRYPOINT [ "dotnet", "/app/DATN.DTKIEN.GracefulStyleShop.API.dll" ]

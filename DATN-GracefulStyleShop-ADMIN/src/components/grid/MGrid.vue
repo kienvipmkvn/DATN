@@ -53,11 +53,6 @@
           @click="refresh()"
           data-tip="Lấy lại dữ liệu"
         ></div>
-        <div
-          class="content-table__refesh icon-export"
-          @click="exportEmployee"
-          data-tip-left="Xuất excel (Ctrl + P)"
-        ></div>
       </div>
     </div>
     <MTable
