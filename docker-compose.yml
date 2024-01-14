@@ -7,8 +7,8 @@ services:
       - MYSQL_SERVER=172.31.17.46
       - MYSQL_PORT=3306
       - MYSQL_INITIAL_CATALOG=datn
-      - MYSQL_USERNAME=root
-      - MYSQL_PASSWORD=123456
+      - MYSQL_USERNAME=dtkien
+      - MYSQL_PASSWORD=123456789@Abc
   front-nginx:
     image: kienvipmkvn/front-nginx
     mem_limit: 512m
