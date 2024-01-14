@@ -354,16 +354,19 @@ export default {
         if(!url){
           await axiosClient.post(url, data);
         }
+        const date = new Date();
+        const orderCode = "DH" + `${date.getFullYear()}${date.getMonth()}${date.getDate()}${date.getHours()}${date.getMinutes()}${date.getSeconds()}`;
         let res = {
           Data: {
             Result: {
               Data: {
                 ResultDesc: "Thanh cong"
               }
-            }
+            },
+            OrderCode: orderCode
           }
         }
-        if (res && res.Data) {
+        if (res &&  .Data) {
           // lấy response dữ liệu thanh thoán
           // let resCheckout = JSON.parse(res.Data.Result)?.Data;
           let resCheckout = res.Data.Result.Data;
