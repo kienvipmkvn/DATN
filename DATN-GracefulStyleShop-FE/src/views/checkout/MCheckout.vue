@@ -366,7 +366,7 @@ export default {
             OrderCode: orderCode
           }
         }
-        if (res &&  .Data) {
+        if (res && res.Data) {
           // lấy response dữ liệu thanh thoán
           // let resCheckout = JSON.parse(res.Data.Result)?.Data;
           let resCheckout = res.Data.Result.Data;
