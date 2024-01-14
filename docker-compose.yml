@@ -4,11 +4,11 @@ services:
     image: kienvipmkvn/be
     mem_limit: 512m
     environment:
-      - MYSQL_SERVER=localhost
+      - MYSQL_SERVER=14.225.255.150
       - MYSQL_PORT=3306
       - MYSQL_INITIAL_CATALOG=datn
-      - MYSQL_USERNAME=root
-      - MYSQL_PASSWORD=123456789@Abc
+      - MYSQL_USERNAME=dtkien
+      - MYSQL_PASSWORD=123456
   front-nginx:
     image: kienvipmkvn/front-nginx
     mem_limit: 512m
