@@ -4,7 +4,7 @@ services:
     image: kienvipmkvn/be
     mem_limit: 512m
     environment:
-      - MYSQL_SERVER=52.77.239.28
+      - MYSQL_SERVER=172.31.17.46
       - MYSQL_PORT=3306
       - MYSQL_INITIAL_CATALOG=datn
       - MYSQL_USERNAME=root
