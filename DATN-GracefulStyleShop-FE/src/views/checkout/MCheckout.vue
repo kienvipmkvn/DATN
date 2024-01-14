@@ -351,7 +351,7 @@ export default {
         };
         let url = `CreditCard`;
         // let res = await axiosClient.post(url, data);
-        if(!1){
+        if(!url){
           await axiosClient.post(url, data);
         }
         let res = {
