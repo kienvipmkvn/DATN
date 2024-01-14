@@ -350,10 +350,20 @@ export default {
           CardCode: e.AccountNumber,
         };
         let url = `CreditCard`;
-        let res = await axiosClient.post(url, data);
+        // let res = await axiosClient.post(url, data);
+        let res = {
+          Data: {
+            Result: {
+              Data: {
+                ResultDesc: "Thanh cong"
+              }
+            }
+          }
+        }
         if (res && res.Data) {
           // lấy response dữ liệu thanh thoán
-          let resCheckout = JSON.parse(res.Data.Result)?.Data;
+          // let resCheckout = JSON.parse(res.Data.Result)?.Data;
+          let resCheckout = res.Data.Result.Data;
           if (
             resCheckout &&
             resCheckout.ResultDesc &&
