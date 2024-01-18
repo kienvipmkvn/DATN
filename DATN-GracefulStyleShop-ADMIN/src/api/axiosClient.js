@@ -9,7 +9,7 @@ import router from "@/router";
  * Config axios
  */
 const axiosClient = axios.create({
-  baseURL: process.env.VUE_APP_BASE_API_URL,
+  baseURL: !process.env.VUE_APP_BASE_API_URL ? "/api/v1" : process.env.VUE_APP_BASE_API_URL,
   headers: {
     "content-type": "application/json",
     "Access-Control-Allow-Origin": "*"
