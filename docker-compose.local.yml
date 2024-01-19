@@ -1,22 +1,24 @@
 version: '3'
 services:
-  be-api:
-    build:
-      dockerfile: Dockerfile.dev
-      context: ./DATN-GracefulStyleShop-BE
-    environment:
-      - MYSQL_SERVER=host.docker.internal
-      - MYSQL_PORT=3306
-      - MYSQL_INITIAL_CATALOG=datn
-      - MYSQL_USERNAME=root
-      - MYSQL_PASSWORD=123456
+  # be-api:
+  #   build:
+  #     dockerfile: Dockerfile.dev
+  #     context: ./DATN-GracefulStyleShop-BE
+  #   environment:
+  #     - MYSQL_SERVER=host.docker.internal
+  #     - MYSQL_PORT=3306
+  #     - MYSQL_INITIAL_CATALOG=datn
+  #     - MYSQL_USERNAME=root
+  #     - MYSQL_PASSWORD=123456
+    # ports:
+    #   - 7218:80
 
   front-admin:
     build:
       dockerfile: Dockerfile.dev
       context: ./DATN-GracefulStyleShop-ADMIN
       args:
-        - VUE_APP_BASE_API_URL=/api/v1
+        - VUE_APP_BASE_API_URL=http://localhost:7218/api/v1
     volumes:
       - /home/node/app/admin/node_modules
       - ./DATN-GracefulStyleShop-ADMIN:/home/node/app/admin
@@ -28,20 +30,9 @@ services:
       dockerfile: Dockerfile.dev
       context: ./DATN-GracefulStyleShop-FE
       args:
-        - VUE_APP_BASE_API_URL=/api/v1
+        - VUE_APP_BASE_API_URL=http://localhost:7218/api/v1
     volumes:
       - /home/node/app/node_modules
       - ./DATN-GracefulStyleShop-FE:/home/node/app
     ports:
       - 5000:8080
-
-  front-nginx:
-    build:
-      dockerfile: Dockerfile.dev
-      context: .
-    ports:
-      - 80:80
-    depends_on:
-      - front-admin
-      - front-client
-      - be-api

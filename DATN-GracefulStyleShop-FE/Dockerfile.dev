@@ -1,5 +1,7 @@
 # build stage
 FROM node:lts-alpine
+ARG VUE_APP_BASE_API_URL
+ENV VUE_APP_BASE_API_URL ${VUE_APP_BASE_API_URL}
 USER node
 
 RUN mkdir -p /home/node/app

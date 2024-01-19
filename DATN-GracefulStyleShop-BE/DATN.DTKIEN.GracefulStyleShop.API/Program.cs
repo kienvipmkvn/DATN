@@ -63,9 +63,9 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 builder.Services.AddControllers().AddJsonOptions(opt => opt.JsonSerializerOptions.PropertyNamingPolicy = null);
 
 builder.Services.AddSingleton(new Cloudinary(new Account(
-    "dqywrcgrr",
-    "511812445438653",
-    "LaDWdP21mxTWyhZ2d5c08LkVYsk"
+    "dteiwcmyb",
+    "162596935736952",
+    "F8VK5KjbJCtrJAlQNJjr858ox_s"
 )));
 
 // Get connectionString
