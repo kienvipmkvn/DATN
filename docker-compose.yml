@@ -11,6 +11,8 @@ services:
       - MYSQL_PASSWORD=123456789@Abc
   front-nginx:
     image: kienvipmkvn/front-nginx
+    environment:
+      - NODE_ENV=production
     mem_limit: 512m
     ports:
       - 80:80
