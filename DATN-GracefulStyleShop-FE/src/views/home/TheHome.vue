@@ -1,5 +1,46 @@
 <template>
   <div class="home">
+    <div class="banber">
+      <img src="../../assets/img/banner/banner-2.webp" alt="" />
+    </div>
+    <div class="list-product">
+      <div class="list-product-title">Sản phẩm bán chạy</div>
+      <Carousel
+        :settings="config.settingsProduct"
+        :breakpoints="config.breakpointsProducts"
+      >
+        <Slide v-for="item in config.productRelated" :key="item">
+          <product-card :item="item" />
+        </Slide>
+      </Carousel>
+    </div>
+    <div class="banber">
+      <img src="../../assets/img/banner/banner-1.webp" alt="" />
+    </div>
+    <div class="list-product">
+      <div class="list-product-title">Sản phẩm mới nhất</div>
+      <Carousel
+        :settings="config.settingsProduct"
+        :breakpoints="config.breakpointsProducts"
+      >
+        <Slide v-for="item in config.productRelated" :key="item">
+          <product-card :item="item" />
+        </Slide>
+      </Carousel>
+      <div class="m-t-16"></div>
+    </div>
+    <div class="list-product">
+      <div class="list-product-title">Sản phẩm giảm giá</div>
+      <Carousel
+        :settings="config.settingsProduct"
+        :breakpoints="config.breakpointsProducts"
+      >
+        <Slide v-for="item in config.productDiscount" :key="item">
+          <product-card :item="item" />
+        </Slide>
+      </Carousel>
+      <div class="m-t-16"></div>
+    </div>
     <div class="homepage-slider">
       <Carousel :settings="config.settingSliderBar">
         <Slide v-for="(item, index) in config.sliders" :key="index">
@@ -54,47 +95,6 @@
           </template>
         </Carousel>
       </div>
-    </div>
-    <div class="banber">
-      <img src="../../assets/img/banner/banner-1.webp" alt="" />
-    </div>
-    <div class="list-product">
-      <div class="list-product-title">Sản phẩm bán chạy</div>
-      <Carousel
-        :settings="config.settingsProduct"
-        :breakpoints="config.breakpointsProducts"
-      >
-        <Slide v-for="item in config.productRelated" :key="item">
-          <product-card :item="item" />
-        </Slide>
-      </Carousel>
-    </div>
-    <div class="banber">
-      <img src="../../assets/img/banner/banner-1.webp" alt="" />
-    </div>
-    <div class="list-product">
-      <div class="list-product-title">Sản phẩm mới nhất</div>
-      <Carousel
-        :settings="config.settingsProduct"
-        :breakpoints="config.breakpointsProducts"
-      >
-        <Slide v-for="item in config.productRelated" :key="item">
-          <product-card :item="item" />
-        </Slide>
-      </Carousel>
-      <div class="m-t-16"></div>
-    </div>
-    <div class="list-product">
-      <div class="list-product-title">Sản phẩm giảm giá</div>
-      <Carousel
-        :settings="config.settingsProduct"
-        :breakpoints="config.breakpointsProducts"
-      >
-        <Slide v-for="item in config.productDiscount" :key="item">
-          <product-card :item="item" />
-        </Slide>
-      </Carousel>
-      <div class="m-t-16"></div>
     </div>
     <!-- Tin tức start-->
     <div class="home-news" style="display: none;">
