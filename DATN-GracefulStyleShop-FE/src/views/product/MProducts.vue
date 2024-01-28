@@ -3,7 +3,7 @@
     <div class="filter-product">
       <div class="filter-search">
         <label for="">Tìm kiếm : </label>
-        <MInput placeholder="Tim kiếm theo tên sản phẩm" />
+        <MInput placeholder="Tim kiếm theo tên sản phẩm"  v-model="textSearch" :data="textSearch" />
       </div>
       <div class="filter-cbb">
         <div class="filter-cbb-item">
@@ -67,8 +67,9 @@ export default {
       numberPage: 1,
       types: [],
       brands: [],
-      typeId : "",
-      brandId : ""
+      typeId : null,
+      brandId : null,
+      textSearch: ""
     };
   },
   methods: {
@@ -88,10 +89,19 @@ export default {
     },
   },
   watch:{
+    textSearch: async function(){
+      let res = await new baseApi("Product").getByFilterDetail({
+        TypeId : this.typeId,
+        BrandId : this.brandId,
+        textSearch : this.textSearch,
+      });
+      this.products = res.Data;
+    },
     typeId: async function(){
       let res = await new baseApi("Product").getByFilterDetail({
         TypeId : this.typeId,
         BrandId : this.brandId,
+        textSearch : this.textSearch,
       });
       this.products = res.Data;
     },
@@ -99,6 +109,7 @@ export default {
       let res = await new baseApi("Product").getByFilterDetail({
         BrandId : this.brandId,
         TypeId : this.typeId,
+        textSearch : this.textSearch,
       });
       this.products = res.Data;
     }
