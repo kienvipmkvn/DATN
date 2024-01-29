@@ -64,12 +64,6 @@ const constants = {
       name:"Admin"
     },
     {
-      text: "Thông tin nhập hàng",
-      classIcon: "icon-supply",
-      path : "/supplys",
-      name:"Supply"
-    },
-    {
       text: "Quản lý đơn hàng",
       classIcon: "icon-order",
       path : "/orders",
