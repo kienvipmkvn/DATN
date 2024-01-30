@@ -16,16 +16,16 @@ const constants = {
       name:"Product"
     },
     {
-      text: "Quản lý màu sắc",
-      classIcon: "icon-overview",
-      path : "/colors",
-      name:"Color"
-    },
-    {
       text: "Quản lý loại sản phẩm",
       classIcon: "icon-cash",
       path : "/types",
       name:"Type"
+    },
+    {
+      text: "Quản lý màu sắc",
+      classIcon: "icon-overview",
+      path : "/colors",
+      name:"Color"
     },
     {
       text: "Quản lý kích cỡ",
@@ -62,6 +62,12 @@ const constants = {
       classIcon: "icon-admin",
       path : "/admins",
       name:"Admin"
+    },
+    {
+      text: "Thông tin nhập hàng",
+      classIcon: "icon-supply",
+      path : "/supplys",
+      name:"Supply"
     },
     {
       text: "Quản lý đơn hàng",

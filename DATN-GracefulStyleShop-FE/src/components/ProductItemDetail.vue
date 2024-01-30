@@ -259,6 +259,9 @@ export default {
       this.sizeActive = color.Sizes[0] ? color.Sizes[0] : null;
     },
     activeSize(size) {
+      if(!this.listSizeByColor.includes(size.SizeId)){
+        return;
+      }
       this.sizeActive = this.colorActive.Sizes.find(x => x.SizeId == size.SizeId);
     },
     async addToCart() {

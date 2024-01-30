@@ -162,7 +162,7 @@ export default {
           : await this.baseApi.create(this.model); // Gọi api Create
 
         // Xử lý custom
-        await this.insertOrUpdateCustom(res.Data.ProductId);
+        await this.insertOrUpdateCustom(res.Data.ProductId ?? res.Data);
 
         this.model = {};
         this.$state.idModel = "";

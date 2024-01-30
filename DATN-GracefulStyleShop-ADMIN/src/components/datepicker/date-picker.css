@@ -1,3 +1,10 @@
+.dp__menu{
+  position: absolute;
+}
+.dp__action_row{
+  display: none;
+}
+
 .date-picker__wrapper {
   min-width: 100%;
   height: var(--height-default) !important;
@@ -38,7 +45,7 @@
   border-radius: 50%;
 }
 .dp__active_date-now {
-  margin: 17px 0;
+  margin: 10px;
   font-size: 14px;
   color: #50b83c;
   cursor: pointer;

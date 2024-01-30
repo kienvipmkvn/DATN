@@ -9,9 +9,7 @@
     :config="options"
     :ref="name+'date'"
     locale="vi"
-    text-input
     auto-apply
-    close-on-scroll
     show-now-button
     :format="formatDate"
     :disabled-dates="disabledDate"
@@ -28,8 +26,6 @@
           autocomplete="off"
           :ref="name"
           :tabindex="tabIndex"
-          @input="onInput"
-          @blur="blurInput"
         />
         <p class="date-picker__icon">
           <i></i>

@@ -93,7 +93,7 @@ export default {
   watch:{
     dataImages:function(){
       if(!this.images?.length > 0){
-        this.images = this.dataImages ? this.dataImages : [] ;
+        this.images = this.dataImages && this.dataImages[0] != null ? this.dataImages : [] ;
       }
     }
   }

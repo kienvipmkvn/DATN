@@ -354,8 +354,8 @@ namespace DATN.DTKIEN.GracefulStyleShop.DL.Repository
                 {
                     query = $"Update product set IsMassDiscount = 1 , MassDiscount = {massDiscountModel.DiscountNumber} where BrandId in (@Id)";
                     numberRecoredDeleted = _databaseConnection.Connection().Execute(query, massDiscountModel.Brands.AsEnumerable().Select(i => new { Id = i.ToString() }).ToList(), transaction:_databaseConnection.Transaction());
-                    query = $"Update product set IsMassDiscount = 1 , MassDiscount = {massDiscountModel.DiscountNumber} where BrandId in (@Id)";
-                    numberRecoredDeleted = _databaseConnection.Connection().Execute(query, massDiscountModel.Brands.AsEnumerable().Select(i => new { Id = i }).ToList(), transaction: _databaseConnection.Transaction());
+                    query = $"Update product set IsMassDiscount = 1 , MassDiscount = {massDiscountModel.DiscountNumber} where TypeId in (@Id)";
+                    numberRecoredDeleted = _databaseConnection.Connection().Execute(query, massDiscountModel.Types.AsEnumerable().Select(i => new { Id = i }).ToList(), transaction: _databaseConnection.Transaction());
                 }
                 _databaseConnection.CommitTransaction();
                 _databaseConnection.Close();

@@ -134,7 +134,6 @@
       ref="functionContextMenu"
     >
       <li @click="confirmDeleteRow">Xóa</li>
-      <li data-tip="Tính năng chưa phát triển">Ngừng sử dụng</li>
     </div>
   </div>
   <!-- Pop-up thông báo khi xóa -->
@@ -237,10 +236,10 @@ export default {
         this.isShowfunction = true;
         if (window.innerHeight - this.heightFunction * 1.5 < event.clientY) {
           this.functionTop = event.clientY - 15 - this.heightFunction;
-          this.functionLeft = event.clientX - 100;
+          this.functionLeft = event.clientX - 40;
         } else {
           this.functionTop = event.clientY + 15;
-          this.functionLeft = event.clientX - 100;
+          this.functionLeft = event.clientX - 40;
         }
       }
     },
